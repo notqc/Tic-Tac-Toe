@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Tic Tac Toe</h1>
+        </div>
+        <div id="gameBoard" class="game-board">
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+        </div>
+        <div class="game-status">
+            <h2 id="statusMessage"></h2>
+        </div>
+        <button id="restartButton" class="restart-button">Restart</button>
+    </div>
+
+    <!-- Player Name Pop-up -->
+    <div id="namePopup" class="popup">
+        <div class="popup-content">
+            <h2>Enter Player Names</h2>
+            <input type="text" id="player1" placeholder="Player 1">
+            <input type="text" id="player2" placeholder="Player 2">
+            <button id="startGame">Start Game</button>
+        </div>
+    </div>
+
+    <!-- Winner Pop-up -->
+    <div id="winnerPopup" class="popup">
+        <div class="popup-content">
+            <h2 id="winnerMessage"></h2>
+            <button id="closeWinnerPopup">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
